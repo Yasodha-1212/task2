@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: 'Asap', sans-serif;
+            color:black;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color:black;
+            text-decoration: none;
+            border-color: black;
+        }
+        h1 {
+            color: black;
+        }
+        .container {
+            min-height: 500px;
+            max-width: 1024px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-top: 30px;
+        }
+        .header-container {
+            background-color: lightblue;
+            min-height: 100px;
+            margin-bottom: 40px;
+        }
+        header {
+            max-width: 1024px;
+            color: black;
+            min-height: 100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .col {
+            min-height: 200px;
+            width: 30%;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .col img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+        .col h1 {
+            position: absolute;
+            bottom: 70px;
+            left: 40%;
+            transform: translateX(-50%);
+            background-color:lightblue;
+            padding: 10px 50px;
+            border-radius: 100px;
+            
+        }
+        .mybutton {
+            padding: 10px 25px;
+            border: 2px solid black;
+            margin: 0 10px;
+            color: black;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .bold {
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <header>
+            <div class="logo"><span class="bold">KADURLA YASODHA </span></div>
+            <nav>
+                <a href="home2.htm" class="mybutton">HOME</a>
+                <a href="about2.html" class="mybutton">ABOUT</a>
+                <a href="contact1.html" class="mybutton">CONTACT</a> 
+                <a href="information.html" class="mybutton">INFORMATION</a>
+             </nav>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="col">
+            <a href="yasodha.pdf">
+                <img src="data:image/png;base64,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"" alt="">
+                <h1>RESUME</h1>
+            </a>
+        </div>
+        <div class="col">
+            <a href="skills.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ87pNO5NvOHS-sc8vu9bUKP32sbf0eFjZocA&s" alt="">
+                <h1>SKILLS</h1>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
